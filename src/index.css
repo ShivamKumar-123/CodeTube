@@ -3,4 +3,33 @@
 html {
     scroll-behavior: smooth;
   }
+
+  /* ===== GLOBAL FIXES ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+
+/* Fix Ant Design Carousel overflow */
+.ant-carousel,
+.ant-carousel .slick-list,
+.ant-carousel .slick-track {
+  overflow: hidden !important;
+}
+
+/* Prevent 100vw overflow issues */
+body {
+  max-width: 100vw;
+}
   
