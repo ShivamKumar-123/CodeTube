@@ -16,6 +16,8 @@ import CareerRoadmap from "./pages/CareerRoadmap";
 import CyberSecurity from "./pages/CyberSecurity";
 import Database from "./pages/Database";
 import GitHub from "./pages/GitHub";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsCondition from "./pages/TermsCondition";
 
 function App() {
   return (
@@ -43,6 +45,8 @@ function App() {
           <Route path="/cyber" element={<CyberSecurity />} />
           <Route path="/database" element={<Database />} />
           <Route path="/git" element={<GitHub />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsCondition />} />
         </Routes>
 
       </main>
